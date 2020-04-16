@@ -1,0 +1,12 @@
+doctype html
+html(lang='it')
+    head
+        meta(charset='utf-8')
+        meta(name='viewport', content="witdth=device-width, initial-scale=1.0")
+        title effetto onda su un testo
+        link(rel="stylesheet", href="../main.css")
+        body
+            -var $text = "onda"
+                #ui
+                    -for(i = 0; i < 26; i++)
+                        .text #{$text}
